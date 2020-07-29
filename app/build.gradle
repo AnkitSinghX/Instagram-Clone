@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.ankit.instagram_clone"
+        minSdkVersion 21
+        targetSdkVersion 26
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //Design library for Coordinator Layout and Toolbars
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:multidex:1.0.1'
+    //BottomNavigationViewEx Library
+    compile 'com.github.ittianyu:BottomNavigationViewEx:1.2.4'
+    //Circle ImageView
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    //Universal Image Loader
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //firebase
+    compile 'com.google.firebase:firebase-auth:10.2.6'
+    //firebase database
+    compile 'com.google.firebase:firebase-database:10.2.6'
+    //firebase database
+    compile 'com.google.firebase:firebase-storage:10.2.6'
+
+}
+apply plugin: 'com.google.gms.google-services'
