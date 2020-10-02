@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Instagram-Clone.iml" filepath="$PROJECT_DIR$/.idea/modules/Instagram-Clone.iml" group="Instagram-Clone" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Instagram-Clone/app" />
       <module fileurl="file://$PROJECT_DIR$/instagram_clone.iml" filepath="$PROJECT_DIR$/instagram_clone.iml" />
     </modules>
   </component>
